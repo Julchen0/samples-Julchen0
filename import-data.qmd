@@ -6,3 +6,14 @@ editor: visual
 ---
 
 ## Import Data
+
+```{r}
+library(googlesheets4)
+library(dplyr)
+waste_data <- read_sheet("https://docs.google.com/spreadsheets/u/2/d/1gVv2PMc5PRMFJR02Cq_Lp0yxSo7LX0O7k0W29qwvXgI/edit?usp=drive_web&ouid=113086405194316088488")
+
+```
+
+```{r}
+glimpse(waste_data)
+```
